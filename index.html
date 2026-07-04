@@ -22,8 +22,10 @@
     </div>
     <nav class="tabs" id="tabs">
       <a href="#about" class="tab active" data-tab="about">About</a>
+      <a href="#experience" class="tab" data-tab="experience">Experience</a>
       <a href="#projects" class="tab" data-tab="projects">Projects</a>
       <a href="#skills" class="tab" data-tab="skills">Skills</a>
+      <a href="#play" class="tab" data-tab="play">Play</a>
       <a href="#contact" class="tab" data-tab="contact">Contact</a>
     </nav>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark theme">
@@ -43,6 +45,7 @@
         <h1>Neha Pande</h1>
         <p class="role"><span class="role-highlight">React</span> Developer · GenAI · Python · Node.js · System Design</p>
         <p class="hero-desc">I build production web apps and ship GenAI features end to end — from RAG pipelines to the UI that makes them usable. Currently at Haptiq Pvt. Ltd., Pune.</p>
+        <p class="hero-hobbies">Beyond code: ☕ coffee, 🎵 music, 🥾 trekking, 📖 reading.</p>
         <div class="hero-actions">
           <a href="assets/resume/Neha_Pande_Resume.pdf" download="Neha_Pande_Resume.pdf" class="btn btn-primary">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
@@ -58,7 +61,28 @@
         <div class="hero-photo-frame">
           <img src="assets/images/profile.jpg" alt="Neha Pande" class="hero-photo" />
         </div>
-        <div class="hero-photo-tag">// human.render()</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-list">
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <h3>Software Engineer — Full Stack</h3>
+            <p class="exp-company">Haptiq Pvt. Ltd., Pune</p>
+          </div>
+          <span class="exp-dates">Jul 2025 – Present</span>
+        </div>
+        <ul class="exp-points">
+          <li>Built production React.js + TypeScript features end-to-end — component architecture, REST API integration, state management, and deployment.</li>
+          <li>Designed RESTful APIs with DTO patterns and networking abstractions; applied system design thinking across frontend-backend boundaries.</li>
+          <li>Integrated Claude API with structured prompt engineering to automate code review, debugging, and AI-assisted feature development.</li>
+          <li>Prototyped LangChain + RAG pipelines and evaluated GenAI integrations (OpenAI API, embeddings) for the product roadmap.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -94,17 +118,6 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/nehapande09" target="_blank" rel="noopener">Code →</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-head">
-          <span class="project-tag">Production</span>
-          <h3>Daily Racing Form</h3>
-        </div>
-        <p class="project-desc">UI components for a high-traffic racing application, with REST API integration and frontend rendering performance work inside a Jenkins CI/CD pipeline.</p>
-        <div class="tag-row">
-          <span class="tag">TypeScript</span><span class="tag">REST APIs</span><span class="tag">Jenkins</span>
         </div>
       </article>
 
@@ -156,6 +169,25 @@
     </div>
   </section>
 
+  <!-- PLAY / QUIZ -->
+  <section id="play" class="section">
+    <h2 class="section-title">Quick dev quiz</h2>
+    <p class="contact-sub">A handful of questions — see how many you get right.</p>
+
+    <div class="quiz-card" id="quizCard">
+      <div class="quiz-progress">
+        <span id="quizProgress">Question 1 of 5</span>
+        <span id="quizScore">Score: 0</span>
+      </div>
+      <p class="quiz-question" id="quizQuestion"></p>
+      <div class="quiz-options" id="quizOptions"></div>
+      <div class="quiz-result" id="quizResult" hidden>
+        <p id="quizResultText"></p>
+        <button class="btn btn-primary" id="quizRestart">Play again</button>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section contact-section">
     <h2 class="section-title">Let's talk</h2>
@@ -188,6 +220,7 @@
 </main>
 
 <footer class="footer">
+  <p id="visitorCounter" class="visitor-counter">// loading visitor stats...</p>
   <p>by Neha Pande <span id="year"></span></p>
 </footer>
 
