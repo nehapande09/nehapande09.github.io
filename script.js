@@ -71,6 +71,15 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 
 // ============================================
+// SKILL TAG HIGHLIGHT ON CLICK
+// ============================================
+document.querySelectorAll('#skills .tag').forEach(tag => {
+  tag.addEventListener('click', () => {
+    tag.classList.toggle('tag-active');
+  });
+});
+
+// ============================================
 // FOOTER YEAR
 // ============================================
 document.getElementById('year').textContent = new Date().getFullYear();

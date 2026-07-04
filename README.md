@@ -33,10 +33,9 @@ Personal portfolio site — Neha Pande, Full Stack Engineer.
 
 ## Adding a new project
 
-Open `index.html`, find the `<!-- Placeholder slot -->` comment inside the
-`.project-grid` in the Projects section, and replace that card's content —
-title, description, tags, and a link to the repo. Duplicate the `<article
-class="project-card">` block for additional projects.
+Open `index.html`, find the `.project-grid` in the Projects section, and
+duplicate an existing `<article class="project-card">` block — update the
+title, description, tags, and repo link for the new project.
 
 ## Updating your resume
 
